@@ -1,0 +1,17 @@
+{
+  "name": "boids-tnm085",
+  "version": "1.0.0",
+  "description": "Group project in the course TNM085 - Modelling Project",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "tsx server.ts"
+  },
+  "devDependencies": {
+    "@fastify/static": "^7.0.4",
+    "@types/node": "^22.1.0",
+    "fastify": "^4.28.1",
+    "tsx": "^4.16.5",
+    "typescript": "^5.5.4"
+  }
+}
