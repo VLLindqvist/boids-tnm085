@@ -12,7 +12,8 @@ fastify.register(Static, {
 });
 
 // Run the server!
-fastify.listen({ port: 9099 }, function (err, address) {
+const port = Number(process.env.PORT) || 9099;
+fastify.listen({ port, host: "0.0.0.0" }, function (err, address) {
   if (err) {
     fastify.log.error(err);
     process.exit(1);
